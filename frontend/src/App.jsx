@@ -423,7 +423,7 @@ export default function App() {
                     </div>
 
                     <div className="bg-slate-50 px-5 py-2.5 border-t border-slate-100 text-[10px] text-slate-400 flex flex-wrap justify-between gap-2 font-medium">
-                      <span>Offer: ?{item.pricing.offer_price} &bull; MRP: ?{item.pricing.mrp}</span>
+                      <span>Offer: ₹{item.pricing.offer_price} &bull; MRP: ₹{item.pricing.mrp}</span>
                       <span>Serving: {item.available_pincodes.join(', ')}</span>
                     </div>
                   </div>
@@ -477,7 +477,7 @@ export default function App() {
 
               <div className="border-t border-slate-100 pt-3 flex justify-between items-baseline px-1">
                 <span className="font-bold text-slate-900">Total Out of Pocket:</span>
-                <span className="text-2xl font-black text-emerald-600">?{confirmedBooking.total_amount}</span>
+                <span className="text-2xl font-black text-emerald-600">₹{confirmedBooking.total_amount}</span>
               </div>
             </div>
 
