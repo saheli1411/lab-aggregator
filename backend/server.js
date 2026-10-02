@@ -68,7 +68,17 @@ const MOCK_LAB_DATABASE = [
     nabl_accredited: true
   }
 ];
-
+// Add right before app.get('/api/search', ...)
+app.get('/', (req, res) => {
+  res.json({
+    status: 'online',
+    message: 'Lab Aggregator Backend API is running successfully.',
+    endpoints: {
+      search: '/api/search?search_query=Lipid&pincode=110001',
+      select_lab: '/api/select-lab (POST)'
+    }
+  });
+});
 // GET: Search Endpoint
 app.get('/api/search', (req, res) => {
   const { search_query = '', pincode = '' } = req.query;
