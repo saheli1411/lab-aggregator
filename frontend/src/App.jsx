@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+ï»¿import React, { useState, useEffect } from 'react';
 import {
   Search,
   MapPin,
@@ -493,7 +493,7 @@ export default function App() {
 
       <footer className="mt-auto border-t border-slate-200 bg-white py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© Mini Lab Aggregator — Built for the Engineering Evaluation Assignment.</p>
+          <p>ï¿½ Mini Lab Aggregator ï¿½ Built for the Engineering Evaluation Assignment.</p>
           <span className="text-slate-400">All 5 Sample Records Active</span>
         </div>
       </footer>
