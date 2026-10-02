@@ -6,8 +6,8 @@ A responsive full-stack diagnostic test aggregator built for the engineering eva
 
 ## Live Demo
 
-- **Frontend App**: [Insert your Vercel/Netlify link here]
-- **Backend API**: [Insert your Render link here]/api/search?search_query=Lipid&pincode=110001
+- **Frontend App**: https://lab-aggregator-phi.vercel.app/
+- **Backend API**: https://lab-aggregator.onrender.com/api/search?search_query=Lipid&pincode=110001
 
 ---
 
