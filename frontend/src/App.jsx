@@ -368,7 +368,7 @@ export default function App() {
                             <Home className="w-3.5 h-3.5 text-cyan-600" />
                             <span>
                               {item.logistics.home_collection
-                                ? (item.logistics.home_collection_fee === 0 ? "Free Home Sample" : "?" + item.logistics.home_collection_fee + " Home Collection")
+                                ? (item.logistics.home_collection_fee === 0 ? "Free Home Sample" : "₹" + item.logistics.home_collection_fee + " Home Collection")
                                 : "Walk-in Only"}
                             </span>
                           </div>
@@ -378,8 +378,8 @@ export default function App() {
                           <div className="flex justify-between items-center">
                             <span>Test Offer Price</span>
                             <div className="flex items-center gap-1.5">
-                              <span className="line-through text-slate-400">?{item.pricing.mrp}</span>
-                              <span className="font-semibold text-slate-700">?{item.pricing.offer_price}</span>
+                              <span className="line-through text-slate-400">₹{item.pricing.mrp}</span>
+                              <span className="font-semibold text-slate-700">₹{item.pricing.offer_price}</span>
                               <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-1 rounded">
                                 {discountPercent}% OFF
                               </span>
@@ -388,7 +388,7 @@ export default function App() {
                           <div className="flex justify-between items-center">
                             <span>Home Collection Fee</span>
                             <span className="font-medium text-slate-700">
-                              {item.logistics.home_collection_fee === 0 ? "?0 (Free)" : "+ ?" + item.logistics.home_collection_fee}
+                              {item.logistics.home_collection_fee === 0 ? "₹0 (Free)" : "+ ₹" + item.logistics.home_collection_fee}
                             </span>
                           </div>
                         </div>
@@ -400,7 +400,7 @@ export default function App() {
                             TOTAL FINAL PRICE
                           </span>
                           <span className="text-2xl font-black text-slate-900 tracking-tight">
-                            ?{totalFinalPrice}
+                            ₹{totalFinalPrice}
                           </span>
                         </div>
 
