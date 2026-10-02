@@ -15,7 +15,7 @@ import {
   CheckCircle,
   XCircle
 } from 'lucide-react';
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://lab-aggregator.onrender.com';
 const PRESETS = [
   { test: "Lipid Profile", pincode: "110001", label: "Lipid Profile @ 110001 (Multi-provider)" },
   { test: "ECG", pincode: "110001", label: "ECG @ 110001 (Package Catch)" },
