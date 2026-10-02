@@ -15,7 +15,7 @@ import {
   CheckCircle,
   XCircle
 } from 'lucide-react';
-
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 const PRESETS = [
   { test: "Lipid Profile", pincode: "110001", label: "Lipid Profile @ 110001 (Multi-provider)" },
   { test: "ECG", pincode: "110001", label: "ECG @ 110001 (Package Catch)" },
@@ -54,7 +54,7 @@ export default function App() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/search?search_query=${encodeURIComponent(test)}&pincode=${encodeURIComponent(pin)}`
+        `${API_BASE_URL}/api/search?search_query=${encodeURIComponent(test)}&pincode=${encodeURIComponent(pin)}`
       );
 
       if (!response.ok) {
@@ -93,7 +93,7 @@ export default function App() {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:5000/api/select-lab', {
+      const response = await fetch('${API_BASE_URL}/api/select-lab', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
