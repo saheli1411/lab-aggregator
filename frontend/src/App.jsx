@@ -350,7 +350,7 @@ export default function App() {
                                       ? "bg-amber-100 text-amber-900 border border-amber-300 font-semibold"
                                       : "bg-white text-slate-700 border border-slate-200")}
                                   >
-                                    {isMatch && "? "}
+                                    {isMatch && <span className="mr-1">★</span>}
                                     {testName}
                                   </span>
                                 );
@@ -493,7 +493,7 @@ export default function App() {
 
       <footer className="mt-auto border-t border-slate-200 bg-white py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>� Mini Lab Aggregator � Built for the Engineering Evaluation Assignment.</p>
+          <p>Mini Lab Aggregator • Built for the Engineering Evaluation Assignment.</p>
           <span className="text-slate-400">All 5 Sample Records Active</span>
         </div>
       </footer>
