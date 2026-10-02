@@ -65,7 +65,7 @@ export default function App() {
       setResults(data.results || []);
       setActiveQuery({ test, pincode: pin });
     } catch (err) {
-      setError("Unable to connect to backend on http://localhost:5000. Ensure 'node server.js' is running.");
+      setError("Unable to connect to backend on ${API_BASE_URL}. Ensure 'node server.js' is running.");
       setResults([]);
     } finally {
       setLoading(false);
